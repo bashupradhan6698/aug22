@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      #blue {
+        color: blue;
+      }
+
+      [required] {
+        border: 1px solid red;
+      }
+
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 2px solid;
+        padding: 20px;
+        /* background-color: red; */
+      }
+
+      p.red {
+        background-color: yellow;
+      }
+
+      div.box.red {
+        /* and selector */
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Selector</h1>
+    <ul>
+      <li>id</li>
+      <li>class</li>
+      <li>tag/element</li>
+      <li>attribute selector</li>
+      <li>Combined Selector
+        <ul>
+          <li>Space means (Descendent selector1)</li>
+          <li>Space not given (and selector)</li>
+        </ul>
+      </li>
+    </ul>
+
+
+    <p class="red">Lorem ipsum dolor sit amet.1</p>
+    <p id="blue">Lorem ipsum dolor sit amet.2</p>
+    <p>Lorem ipsum dolor sit amet.3</p>
+  </body>
+
+  <form action="">
+    <input type="text" placeholder="Enter you email" required>
+    <input type="password" placeholder="Password">
+    <input type="submit">
+  </form>
+
+  <div class="box red">
+
+  </div>
+
+  <div class="box">
+
+
+  </div>
+
+  <div class="red">
+    red
+  </div>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- converts to binary form and presents to human in readable form -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html"> Home</a></li>
+          <li class="ml-10"><a href="./contact.html" target="_blank" class="active-link">Contact me</li>
+
+          <li class="ml-10"><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+        </ul>
+      </nav>
+
+      <h2>Contact Details</h2>
+
+      <fieldset>
+
+        <legend>Your Information</legend>
+
+        <form action="mailto:bashupradhan54@gmail.com?suject=info" method="post" enctype="text/plain">
+          <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email" required>
+          </p>
+
+          <p>
+            <label for="name">Username</label>
+            <input type="text" name="name" id="name" placeholder="Enter user name">
+          </p>
+          <p>
+          <h4>PLease select Gender</h4>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" value="female">
+          </p>
+          <p>
+          <h4>PLease select Habits</h4>
+          <label for="dance">Dance</label>
+          <input type="checkbox" name="habits" id="dance" value="dance">
+          <label for="run">Run</label>
+          <input type="checkbox" name="habits" id="run" value="run">
+          <label for="jump">Jump</label>
+          <input type="checkbox" name="habits" id="jump" value="jump">
+          </p>
+          <!-- single option -->
+          <p>
+          <h4>Please select your favorite Coffee</h4>
+          <select name="coffee" id="coffee">
+            <option value="latte" selected>Latte</option>
+            <option value="cappuchino">Cappuchino</option>
+            <option value="americano">Americano</option>
+          </select>
+          <br>
+          <br>
+          <!-- option inside option -->
+          <select name="coffeetype" id="coffeetype">
+            <optgroup label="Strong Coffee"></optgroup>
+            <option value="latte">Latte</option>
+            <option value="cappuchino">Cappuchino</option>
+            </optgroup>
+            <optgroup label="Light Coffee"></optgroup>
+            <option value="americano">Americano</option>
+            </optgroup>
+          </select>
+          </p>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+
+          <p>
+
+            <textarea name="" id="" cols="50" rows="15"></textarea>
+
+          </p>
+
+        </form>
+      </fieldset>
+  </body>
+
+</html>
